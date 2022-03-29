@@ -33,14 +33,44 @@ Step-5 : Now for getting some real data we will be creating some models and migr
          
 Step-6 : Open cmd and create a new project 
          python manage.py startapp <app-name>  # e.g. base
+         NOTE : Do add the name in the INSTALLED_APPS = ["base",]
          
 Step-7 : go inside the newly created app and add a class in the models.py file
          class Item(models.Model)
          
 Step-8 : Once the class is created then do the migrations using below command
          python manage.py makemigrations
+         python manage.py migrate  (apply the migrations by migrate command)
+
+Step-9 : Open the cmd and hit
+         python manage.py shell  # This will give the cmd interface to get working with the data
+         from base.models import Item
+         Item.objects.create(name="Item #1")
+         Item.objects.create(name="Item #2")
+         Item.objects.create(name="Item #3")
+         items = Items.objects.all()
+         print(items)
+         exit()
          
-         
+Step-10 : Go to the api folder & add a new file serializers.py
+          We need to serialize complex object before rendering. So we need to create a Item class serializer 
+          so that the response object can understand.
+          
+Step-11 : Go to the api --> views.py 
+          from base.models import Item
+          from .serializers import ItemSerializer
+          now just query and serialize all the data from the db & return it.
+          python manage.py runserver   # to validate
+          
+Step-12 : Create a new view to add Items from the UI (there are many methods)
+          Here we will do it via the Serializer class
+          add a new function addItem(request) and add a decorator to it with POST 
+
+Step-13 : Create a new url endpoint of this view inside the api --> urls.py
+          path('add/', views.addItem),
+
+Step-14 : Go to the UI url and add a simple post request from there
+          {"name" : "Item created from post"}      
 
 ```
 
