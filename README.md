@@ -14,6 +14,8 @@ A simple template for Django Rest Framework
 Step-1 : To create a new project use the command :
          django-admin startproject <project-name>
          
+         NOTE : python manage.py createsuperuser # creates a user with admin level permissions
+         
 Step-2 : Go inside the settings.py file and add the 'rest-framework' 
          INSTALLED_APPS = ['rest_framework']
          NOTE : its better to keep all the api's in a separate folder of the project
