@@ -11,7 +11,7 @@ A simple template for Django Rest Framework
     - If you are looking to create a public or a private api or an API to simply serve the data to your own applications.
   Djangorestframework tool will do the job.
 ```
-Step-1 : To create a new project use the command :
+Step-1 : To create a new project use the command  :
          django-admin startproject <project-name>
          
          NOTE : python manage.py createsuperuser # creates a user with admin level permissions
