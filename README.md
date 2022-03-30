@@ -66,7 +66,8 @@ Step-11 : Go to the api --> views.py
           
 Step-12 : Create a new view to add Items from the UI (there are many methods)
           Here we will do it via the Serializer class
-          add a new function addItem(request) and add a decorator to it with POST 
+          Go and add a addItem(request) function in the api-->views.py file
+          Add a new function addItem(request) and add a decorator to it with POST 
 
 Step-13 : Create a new url endpoint of this view inside the api --> urls.py
           path('add/', views.addItem),
