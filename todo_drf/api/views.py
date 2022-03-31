@@ -64,4 +64,4 @@ def taskDelete(request, pk):
 def taskDelete(request):
     task = Task.objects.all()
     task.delete()
-    return Response('ALL ITEMS DELETED'.format())
+    return Response('ALL ITEMS DELETED')
