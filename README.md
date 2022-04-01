@@ -58,7 +58,7 @@ Step-10 : Go to the api folder & add a new file serializers.py
           We need to serialize complex object before rendering. So we need to create a Item class serializer 
           so that the response object can understand.
           
-Step-11 : Go to the api --> views.py 
+Step-11 : Go to the folder api --> views.py 
           from base.models import Item
           from .serializers import ItemSerializer
           now just query and serialize all the data from the db & return it.
