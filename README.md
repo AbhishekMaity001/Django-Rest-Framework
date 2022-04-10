@@ -1,6 +1,17 @@
 # Django-Rest-Framework
 A simple template for Django Rest Framework
 
+What is REST?
+Rest is a set of guidelines to develop web API. and any API which is developed using REST guidelines is known as REST or RESTFul API's
+
+CRUD Operations : 
+
+| Operation | HTTP Methods | Description                                    
+|-----------|--------------|------------------------------------------------|
+| Create    | POST         | Creating/Posting/Inserting Data                |
+| Read      | GET          | Reading/Getting/Retrieving Data                |
+| Update    | PUT, PATCH   | Complete Update - PUT , Partial Update - PATCH |
+| Delete    | DELETE       | Deleting Data                                  |
 
 # Steps :
     - pip install django
